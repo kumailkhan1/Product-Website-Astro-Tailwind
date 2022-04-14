@@ -1,3 +1,3 @@
-First time using Tailwind and Astro :))
+Simple Static website, First time using Tailwind and Astro :))
 
 Check it out: https://astro-tailwind.netlify.app/
