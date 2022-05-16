@@ -1,75 +1,34 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/icon16.png" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Blog</title>
-  </head>
+---
+import Layout from "../layouts/common.astro";
+---
 
-  <body class="bg-gray-200">
-    <div class="py-8">
-      <nav class="flex justify-center items-start pb-10 space-x-10">
-        <a href="/" class="-mt-8"
-          ><img src="/icon16.png" height="100" width="100" alt="" /></a
-        >
-        <a href="/" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
-        <a href="/pricing" class="font-medium text-gray-500 hover:text-gray-900"
-          >Pricing</a
-        >
-        <a href="/blog" class="font-bold text-gray-800 hover:text-gray-900"
-          >Blog</a
-        >
-        <a href="/login" class="font-medium text-gray-500 hover:text-gray-900"
-          >Login</a
-        >
-        <a
-          href="/signup"
-          class="font-medium text-white hover:bg-red-600 bg-red-500 rounded-lg px-2 py-2 -mt-2"
-          >Sign up</a
-        >
-      </nav>
-
-      <h1
-        class="my-5 py-2 text-center text-4xl font-extrabold tracking-tight text-transparent 
-bg-clip-text bg-gradient-to-br from-pink-300 to-red-600 uppercase"
-      >
-        Blog
-      </h1>
-
-      <div class="mt-20 mx-auto text-center max-w-3xl px-10">
-        <div
-          class="mb-10 p-8 bg-white border 
+<Layout title="Blog">
+  <div
+    class="mb-10 p-8 bg-white border 
 border-gray-200 rounded-2xl 
 shadow-sm flex flex-col"
-        >
-          <p
-            class="mb-6 text-gray-400 uppercase 
+  >
+    <p
+      class="mb-6 text-gray-400 uppercase 
 small text-sm"
-          >
-            Jan 06 2022
-          </p>
-          <h3 class="text-3xl font-semibold text-gray-900">Some news</h3>
-          <p class="mt-6 text-gray-500">
-            Today we introduced a new big update ....
-          </p>
-        </div>
-        <div
-          class="mb-10 p-8 bg-white border 
+    >
+      Jan 06 2022
+    </p>
+    <h3 class="text-3xl font-semibold text-gray-900">Some news</h3>
+    <p class="mt-6 text-gray-500">Today we introduced a new big update ....</p>
+  </div>
+  <div
+    class="mb-10 p-8 bg-white border 
 border-gray-200 rounded-2xl 
 shadow-sm flex flex-col"
-        >
-          <p
-            class="mb-6 text-gray-400 uppercase 
+  >
+    <p
+      class="mb-6 text-gray-400 uppercase 
 small text-sm"
-          >
-            Jan 06 2022
-          </p>
-          <h3 class="text-3xl font-semibold text-gray-900">Some news</h3>
-          <p class="mt-6 text-gray-500">
-            Today we introduced a new big update ....
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+    >
+      Jan 06 2022
+    </p>
+    <h3 class="text-3xl font-semibold text-gray-900">Some news</h3>
+    <p class="mt-6 text-gray-500">Today we introduced a new big update ....</p>
+  </div>
+</Layout>

@@ -1,112 +1,53 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/icon16.png" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Welcome!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+---
+import Layout from "../layouts/common.astro";
+---
 
-  <body>
-    <div class="py-8 bg-gray-200">
-      <nav class="flex justify-center items-start pb-10 space-x-10">
-        <a href="/" class="-mt-8"
-          ><img src="icon16.png" height="100" width="100" alt="" /></a
-        >
-        <a href="/" class="font-bold text-gray-800 hover:text-gray-900"
-          >Home</a
-        >
-        <a href="/pricing" class="font-medium text-gray-500 hover:text-gray-900"
-          >Pricing</a
-        >
-        <a href="/blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Blog</a
-        >
-        <a href="/login" class="font-medium text-gray-500 hover:text-gray-900"
-          >Login</a
-        >
-        <a
-          href="/signup"
-          class="font-medium text-white hover:bg-red-600 bg-red-500 rounded-lg px-2 py-2 -mt-2"
-          >Sign up</a
-        >
-      </nav>
+<Layout title="Schema Generator">
+  <p class="text-center text-gray-700">
+    Generate schema for your blog in one-click!
+  </p>
+  <button
+    class="block text-white bg-green-500 px-5 py-3 mx-auto mt-10 font-bold rounded-lg"
+    >Get Extension</button
+  >
 
-      <h1
-        class="text-center text-5xl mb-10 font-extrabold tracking-tight text-transparent 
-bg-clip-text bg-gradient-to-br from-pink-300 to-red-600"
-      >
-        Schema Generator
-      </h1>
-      <p class="text-center text-gray-700">
-        Generate schema for your blog in one-click!
-      </p>
-      <button
-        class="block text-white bg-green-500 px-5 py-3 mx-auto mt-10 font-bold rounded-lg"
-        >Get Extension</button
-      >
+  <p class="mt-2 text-2xl font-extrabold text-gray-900 tracking-tight">
+    Everything you need to know about this app
+  </p>
+  <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+    Providing one-click solution to generate...
+  </p>
 
-      <div class="mt-20 mx-auto text-center max-w-3xl px-10">
-        <p class="mt-2 text-2xl font-extrabold text-gray-900 tracking-tight">
-          Everything you need to know about this app
-        </p>
-        <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          Providing one-click solution to generate...
-        </p>
-
-        <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
-          <div class="bg-gray-50 rounded-lg px-6 pb-8">
-            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-              How-to Schema
-            </h3>
-            <p class="mt-5 text-gray-500">
-              Boost your site CTR using How-to schema!
-            </p>
-          </div>
-
-          <div class="bg-gray-50 rounded-lg px-6 pb-8">
-            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-              FAQ Schema
-            </h3>
-            <p class="mt-5 text-gray-500">
-              Get that nice-looking faq section in SERPS!
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-lg px-6 pb-8">
-            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-              List Schema
-            </h3>
-            <p class="mt-5 text-gray-500">
-              High CTR for your product review articles
-            </p>
-          </div>
-
-          <div class="bg-gray-50 rounded-lg px-6 pb-8">
-            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-              Boost Rankings
-            </h3>
-            <p class="mt-5 text-gray-500">Get 10x ROI!</p>
-          </div>
-        </div>
-      </div>
-
-      <footer class="mt-20 pt-12 border-t-2 border-gray-300">
-        <nav class="flex justify-center pb-10 space-x-10">
-          <a href="/" class="font-medium text-gray-500 hover:text-gray-900"
-            >Home</a
-          >
-          <a
-            href="/pricing"
-            class="font-medium text-gray-500 hover:text-gray-900">Pricing</a
-          >
-          <a href="/blog" class="font-medium text-gray-500 hover:text-gray-900"
-            >Blog</a
-          >
-        </nav>
-        <p class="text-center text-gray-400">
-          &copy; 2021 Great Tool. All rights reserved.
-        </p>
-      </footer>
+  <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
+    <div class="bg-gray-50 rounded-lg px-6 pb-8">
+      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+        How-to Schema
+      </h3>
+      <p class="mt-5 text-gray-500">Boost your site CTR using How-to schema!</p>
     </div>
-  </body>
-</html>
+
+    <div class="bg-gray-50 rounded-lg px-6 pb-8">
+      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+        FAQ Schema
+      </h3>
+      <p class="mt-5 text-gray-500">
+        Get that nice-looking faq section in SERPS!
+      </p>
+    </div>
+    <div class="bg-gray-50 rounded-lg px-6 pb-8">
+      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+        List Schema
+      </h3>
+      <p class="mt-5 text-gray-500">
+        High CTR for your product review articles
+      </p>
+    </div>
+
+    <div class="bg-gray-50 rounded-lg px-6 pb-8">
+      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+        Boost Rankings
+      </h3>
+      <p class="mt-5 text-gray-500">Get 10x ROI!</p>
+    </div>
+  </div>
+</Layout>
